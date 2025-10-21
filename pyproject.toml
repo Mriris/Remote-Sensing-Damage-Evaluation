@@ -9,4 +9,6 @@ dependencies = [
     "opencv-python",
     "torch",
     "torchvision",
+    "requests",
+    "tqdm",
 ]
