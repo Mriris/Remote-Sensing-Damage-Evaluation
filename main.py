@@ -5,9 +5,9 @@ import cv2
 from utilss import resize_
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--input_former',type=str,default=r'C:\0Program\Python\VIEWS\models\RSDE\test\pre.jpg')
-    parser.add_argument('--input_latter',type=str,default=r"C:\0Program\Python\VIEWS\models\RSDE\test\post.jpg")
-    parser.add_argument('--output_path',type=str,default=r'C:\0Program\Python\VIEWS\models\RSDE\test\output')
+    parser.add_argument('--input_former',type=str,default=r'test\pre.jpg')
+    parser.add_argument('--input_latter',type=str,default=r"test\post.jpg")
+    parser.add_argument('--output_path',type=str,default=r'test\output')
     return parser.parse_args()
 
 if __name__=="__main__":
