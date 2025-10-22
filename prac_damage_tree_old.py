@@ -635,26 +635,26 @@ if __name__ == "__main__":
     if 1 == 2:
         dr = {'takeoff_wheel': 1.0, 'radia': 0.0, 'wing': 1.0, 'mechine': 1.0, 'tail_wing': 0, 'head': 0}
         img = damage_tree_dyc(dr)
-        cv2.imwrite(r'test\test_dyc.png', img)
+        cv2.imwrite(os.path.join('test', 'test_dyc.png'), img)
     elif 1==2:
         dr = {'carriage': 1.0, 'radar': 0.0,   'tank': 1.0, 'wheel': 0, 'head': 0}
         img = damage_tree_ldc(dr)
-        cv2.imwrite(r'test_ldc.png', img)
+        cv2.imwrite('test_ldc.png', img)
 
     elif 1==2:
         dr = {'carriage': 1.0, 'tianxian': 0.0,   'tank': 1.0, 'wheel': 0, 'head': 0}
         img = damage_tree_txc(dr)
-        cv2.imwrite(r'test_txc.png', img)
+        cv2.imwrite('test_txc.png', img)
 
     elif 1 == 2:
         dr = {'carriage': 1.0, 'launcher': 1.0,   'tank': 1.0, 'wheel': 0, 'head': 0}
         img = damage_tree_txc(dr)
-        cv2.imwrite(r'test_txc.png', img)   
+        cv2.imwrite('test_txc.png', img)   
 
     elif 1 == 1:
         dr = {'takeoff_wheel': 1.0, 'radia': 0.0, 'wing': 1.0, 'mechine': 1.0, 'tail_wing': 0, 'head': 0}
         img = damage_tree_zkc(dr)
-        cv2.imwrite(r'test_zkc.png', img)   
+        cv2.imwrite('test_zkc.png', img)   
 '''
 
 

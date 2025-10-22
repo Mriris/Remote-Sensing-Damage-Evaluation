@@ -41,8 +41,8 @@ def init():
     device = 'cpu'
     models_list = []
 
-    building_seg_model = ini_seg(2,"b1",r"model_files\building.pth")
-    damage_seg_model = ini_seg(2, "b1", r"model_files\damage.pth")
+    building_seg_model = ini_seg(2,"b1",os.path.join("model_files", "building.pth"))
+    damage_seg_model = ini_seg(2, "b1", os.path.join("model_files", "damage.pth"))
 
     models_list.append(building_seg_model)
     models_list.append(damage_seg_model)

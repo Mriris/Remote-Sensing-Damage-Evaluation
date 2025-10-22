@@ -6,9 +6,9 @@ from utilss import resize_
 from weight_manager import check_and_download_weights
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--input_former',type=str,default=r'test\pre.jpg')
-    parser.add_argument('--input_latter',type=str,default=r"test\post.jpg")
-    parser.add_argument('--output_path',type=str,default=r'test\output')
+    parser.add_argument('--input_former',type=str,default=os.path.join('test', 'pre.jpg'))
+    parser.add_argument('--input_latter',type=str,default=os.path.join("test", "post.jpg"))
+    parser.add_argument('--output_path',type=str,default=os.path.join('test', 'output'))
     return parser.parse_args()
 
 if __name__=="__main__":
